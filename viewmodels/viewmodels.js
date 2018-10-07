@@ -7,6 +7,15 @@ class ViewModelHusky {
         return arrayHusky
     }
 }
+class ViewModelComment{
+    static ListCommentWithIdHusky(comment){
+        let array = []
+        comment.forEach(e => {
+            array.push({ id: e._id, idHusky: e.idHusky, nameUser: e.nameUser, contentComment: e.contentComment,likeComment : e.likeComment})
+        });
+        return array
+    }
+}
 module.exports = {
-    ViewModelHusky
+    ViewModelHusky,ViewModelComment
 }
