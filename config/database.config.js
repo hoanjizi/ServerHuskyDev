@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'link to data'
+    url: 'mongodb+srv://hoanjizi:vanhoan@hoan-ktknh.mongodb.net/huskydb'
 }
