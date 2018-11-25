@@ -10,7 +10,7 @@ exports.createHusky = (req) => {
     })
 }
 exports.findHusky = () => {
-    return Husky.find().then(rtl=>{
+    return Husky.find().litmit(20).then(rtl=>{
         return ViewModel.ViewModelHusky.ListHusky(rtl)
     })
 }
