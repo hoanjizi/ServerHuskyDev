@@ -10,7 +10,7 @@ exports.createHusky = (req) => {
     })
 }
 exports.findHusky = () => {
-    return Husky.find().limit(20).then(rtl=>{
+    return Husky.find().limit(5).then(rtl=>{
         return ViewModel.ViewModelHusky.ListHusky(rtl)
     })
 }
