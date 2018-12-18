@@ -4,5 +4,6 @@ module.exports = (app) => {
     const Wraper = require('../../infras/wraper.infras.js')
     app.post('/husky/newhusky',urlEncode,Wraper(HuskyCtrl.createHusky))
     app.get('/husky/getallhusky',Wraper(HuskyCtrl.findHusky))
+    app.get('/husky/getcounthusky',Wraper(HuskyCtrl.getCountHusky))
 
 }
