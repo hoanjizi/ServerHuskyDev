@@ -6,6 +6,9 @@ class ViewModelHusky {
         });
         return arrayHusky
     }
+    static CountHuskyList(num) {
+        return {count : num}
+    }
 }
 class ViewModelComment{
     static ListCommentWithIdHusky(comment){

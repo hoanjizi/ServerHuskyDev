@@ -14,3 +14,8 @@ exports.findHusky = () => {
         return ViewModel.ViewModelHusky.ListHusky(rtl)
     })
 }
+exports.getCountHusky = () =>{
+    return Husky.find().count().exec().then(count=> {
+        return ViewModel.ViewModelHusky.CountHuskyList(count)
+    })
+}
